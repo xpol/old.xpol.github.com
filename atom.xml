@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Xpol's Github Pages]]></title>
+  <link href="http://xpol.github.com/atom.xml" rel="self"/>
+  <link href="http://xpol.github.com/"/>
+  <updated>2012-03-08T00:01:58+08:00</updated>
+  <id>http://xpol.github.com/</id>
+  <author>
+    <name><![CDATA[xpol]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hello Github Pages]]></title>
+    <link href="http://xpol.github.com/blog/2012/02/27/hello-github-pages/"/>
+    <updated>2012-02-27T14:15:00+08:00</updated>
+    <id>http://xpol.github.com/blog/2012/02/27/hello-github-pages</id>
+    <content type="html"><![CDATA[<p>Greetings there!</p>
+
+<p>This is my first post on the github pages.</p>
+
+<p>I hope you like my posts.</p>
+
+<p>I&#8217;m a programmer in Chengdu.</p>
+]]></content>
+  </entry>
+  
+</feed>
