@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Xpol's Github Pages]]></title>
-  <link href="http://xpol.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Batch | Xpol's Github Pages]]></title>
+  <link href="http://xpol.github.com/blog/categories/batch/atom.xml" rel="self"/>
   <link href="http://xpol.github.com/"/>
-<<<<<<< HEAD
-  <updated>2012-03-08T00:25:44+08:00</updated>
-=======
   <updated>2012-07-26T13:37:46+08:00</updated>
->>>>>>> 219bfdcb0862aa69ee045112a998a32ded7b30d7
   <id>http://xpol.github.com/</id>
   <author>
     <name><![CDATA[xpol]]></name>
@@ -18,8 +14,6 @@
 
   
   <entry>
-<<<<<<< HEAD
-=======
     <title type="html"><![CDATA[Detect if bat file is running via double click or from cmd window]]></title>
     <link href="http://xpol.github.com/blog/2012/07/26/detect-if-bat-file-is-running-via-double-click-or-from-cmd-window/"/>
     <updated>2012-07-26T12:35:00+08:00</updated>
@@ -28,7 +22,7 @@
 
 <p>Some times we need to see the batch file result. It is easy to see the output
 if we run the batch file from the cmd window. But to open a cmd windows and <code>cd</code>
-to the directory then type the batch file name is very boring. And we&#8217;d like to
+to the directory then type the batch file name is very boring. And we'd like to
 run the batch file by just one click. So we just add a <code>pause</code> at the end of the
 batch file (or just before each exit).</p>
 
@@ -85,25 +79,6 @@ This is valid because when launched from a command windows, %cmdcmdline% is <cod
 Where the <code>%SystemRoot%</code> is usually <code>C:\Windows</code>. And it can hardly have something like <code>C:\/cndows</code>.</p>
 
 <p>I tested on Windows XP and Windows 7 both works.</p>
-]]></content>
-  </entry>
-  
-  <entry>
->>>>>>> 219bfdcb0862aa69ee045112a998a32ded7b30d7
-    <title type="html"><![CDATA[Hello Github Pages]]></title>
-    <link href="http://xpol.github.com/blog/2012/02/27/hello-github-pages/"/>
-    <updated>2012-02-27T14:15:00+08:00</updated>
-    <id>http://xpol.github.com/blog/2012/02/27/hello-github-pages</id>
-    <content type="html"><![CDATA[<p>Greetings there!</p>
-
-<p>This is my first post on the github pages.</p>
-
-<p>I hope you like my posts.</p>
-<<<<<<< HEAD
-
-<p>I&#8217;m a programmer in Chengdu.</p>
-=======
->>>>>>> 219bfdcb0862aa69ee045112a998a32ded7b30d7
 ]]></content>
   </entry>
   
