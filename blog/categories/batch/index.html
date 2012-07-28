@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Xpol's Github Pages</title>
+  <title>Category: Batch - Xpol's Github Pages</title>
   <meta name="author" content="xpol">
 
   
-  <meta name="description" content="Problem Some times we need to see the batch file result. It is easy to see the output
-if we run the batch file from the cmd window. But to open a cmd &hellip;">
+  <meta name="description" content="Category: Batch">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ if we run the batch file from the cmd window. But to open a cmd &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://xpol.github.com/">
+  <link rel="canonical" href="http://xpol.github.comblog/categories/batch/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -63,153 +62,40 @@ if we run the batch file from the cmd window. But to open a cmd &hellip;">
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article role="article">
   
-  
-  
-    <article>
-      
   <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/26/detect-if-bat-file-is-running-via-double-click-or-from-cmd-window/">Detect if Bat File Is Running via Double Click or From Cmd Window</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-26T12:35:00+08:00" pubdate data-updated="true">Jul 26<span>th</span>, 2012</time>
-        
-      </p>
+    <h1 class="entry-title">Category: Batch</h1>
     
   </header>
+  
+  <div id="blog-archives" class="category">
 
 
-  <div class="entry-content"><h2>Problem</h2>
 
-<p>Some times we need to see the batch file result. It is easy to see the output
-if we run the batch file from the cmd window. But to open a cmd windows and <code>cd</code>
-to the directory then type the batch file name is very boring. And we&#8217;d like to
-run the batch file by just one click. So we just add a <code>pause</code> at the end of the
-batch file (or just before each exit).</p>
+  
+  <h2>2012</h2>
 
-<pre><code>:: normal batch stuffs
-bala
-bala
+<article>
+  
+<h1><a href="/blog/2012/07/26/detect-if-bat-file-is-running-via-double-click-or-from-cmd-window/">Detect if bat file is running via double click or from cmd window</a></h1>
+<time datetime="2012-07-26T12:35:00+08:00" pubdate><span class='month'>Jul</span> <span class='day'>26</span> <span class='year'>2012</span></time>
 
-:: add the pause to see the result when double click form the explorer.
-pause
-</code></pre>
-
-<p>Now the the double click way works fine. But life is not that easy! Now if we run
-it from cmd windows, we needs to press a key to continue. So if we can detect if
-bat file is running via double click or from cmd window, then we can make both
-case happy.</p>
-
-<p>But how?</p>
-
-<h2>Solution</h2>
-
-<p>I googled for answers, and I found <a href="http://stackoverflow.com/questions/5859854/detect-if-bat-file-is-running-via-double-click-or-from-cmd-window">this stackoverflow question</a>.
-The answer says:</p>
-
-<p><code>%cmdcmdline%</code> gives the exact command line used to start the current Cmd.exe.</p>
-
-<ul>
-<li>When launched from a command console, this var is <code>"%SystemRoot%\system32\cmd.exe"</code>.</li>
-<li>When launched from explorer this var is <code>cmd /c ""{full_path_to_the_bat_file}" "</code>;</li>
-</ul>
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/batch/'>Batch</a></span>
+</footer>
 
 
-<p>But how to do the check?</p>
+</article>
 
-<p>I began with this:</p>
-
-<pre><code>if %cmdcmdline% == "%SystemRoot%\system32\cmd.exe" (
-    echo from cmd window...
-) else (
-    pause
-)
-</code></pre>
-
-<p>But that failed because when launched from explorer %cmdcmdline% have <code>"</code> and tailing space.</p>
-
-<p>After a lot of test, finally I work out it like this:</p>
-
-<pre><code>if "%cmdcmdline:~4,2%"=="/c" (pause)
-</code></pre>
-
-<p>Clear and simple!</p>
-
-<p>We just check the <code>/c</code> in <code>cmd /c ""{full_path_to_the_bat_file}" "</code> when from dobule click in exploter.
-This is valid because when launched from a command windows, %cmdcmdline% is <code>"%SystemRoot%\system32\cmd.exe"</code>.
-Where the <code>%SystemRoot%</code> is usually <code>C:\Windows</code>. And it can hardly have something like <code>C:\/cndows</code>.</p>
-
-<p>I tested on Windows XP and Windows 7 both works.</p>
 </div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/02/27/hello-github-pages/">Hello Github Pages</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
 
   
+</article>
 
-
-<time datetime="2012-02-27T14:15:00+08:00" pubdate data-updated="true">Feb 27<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Greetings there!</p>
-
-<p>This is my first post on the github pages.</p>
-
-<p>I hope you like my posts.</p>
-
-<p>I&#8217;m a programmer in Chengdu.</p>
 </div>
-  
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -230,7 +116,7 @@ Where the <code>%SystemRoot%</code> is usually <code>C:\Windows</code>. And it c
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/xpol">@xpol</a> on GitHub
@@ -260,7 +146,7 @@ Where the <code>%SystemRoot%</code> is usually <code>C:\Windows</code>. And it c
 <section>
   <h1>Latest Tweets</h1>
   <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   <script type="text/javascript">
     $.domReady(function(){
@@ -279,6 +165,7 @@ Where the <code>%SystemRoot%</code> is usually <code>C:\Windows</code>. And it c
 
   
 </aside>
+
 
     </div>
   </div>
