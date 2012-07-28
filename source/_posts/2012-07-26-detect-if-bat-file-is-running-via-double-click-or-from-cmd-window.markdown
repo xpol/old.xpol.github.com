@@ -31,7 +31,7 @@ But how?
 
 ## Solution
 
-I googled for answers, and I found [thisstackoverflow question][stackoverflow-5859854].
+I googled for answers, and I found [this stackoverflow question][stackoverflow-5859854].
 The answer says:
 
 `%cmdcmdline%` gives the exact command line used to start the current Cmd.exe.
